@@ -7,6 +7,10 @@
     <title>Login</title>
 </head>
 <body>
-    <p>Hi there, welcome!</p>
+    {% if name %}
+        <h1>Hi {{ name }}, welcome!</h1>
+    {% else %}
+        <h1>Hi there, welcome!</h1>
+    {% endif %}
 </body>
 </html>

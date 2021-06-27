@@ -16,6 +16,8 @@ def show_post(post_id):
     # show the post with the given id, the id is an integer
     return f'Post {post_id}'
 
-@app.route('/login')
-def login():
-    return render_template('login.html')
+@app.route('/login', methods=['POST', 'GET'])
+@app.route('/login/<name>')
+def login(name=None):
+    # if request.method == 'POST':
+    return render_template('login.html', name=name)
