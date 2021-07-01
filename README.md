@@ -1,3 +1,9 @@
 # ffyuanda-website
 a blog website from ffyuanda
 under construction...
+
+Here is the demo app:
+https://ffyuanda-website.herokuapp.com/
+
+I will give it a better domain once it is almost built...
+For now let's just put it on heroku...
