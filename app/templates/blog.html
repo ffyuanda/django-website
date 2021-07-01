@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<style>
+    /* placeholder */
+</style>
+
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>ffyuanda</h1>
+        <p>Welcome to ffyuanda's website</p>
+    </div>
+
+    <div class="navbar">
+        <a href="https://github.com/ffyuanda" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/shaoxuan-max-yuan-5b5b571b6/" target="_blank">LinkedIn</a>
+        <a href="https://www.zhihu.com/people/yuanda-28" target="_blank">Zhihu</a>
+        <a href="https://mp.weixin.qq.com/s/tTBPe6ErYTFYDoc8tBcVOQ" class="right" target="_blank">Dear Janet</a>
+    </div>
+
+    <div class="row">
+        <div class="side">
+            <h3>Contents</h3>
+            <h3>To be</h3>
+            <h3>Added</h3>
+        </div>
+        <div class="main">
+            <embed src="{{ url_for('static', filename='resume.pdf') }}" type="application/pdf" width="100%" height="600px" />
+        </div>
+    </div>
+
+    <div class="footer">
+        <h2>Here is the bottomline</h2>
+    </div>
+
+
+</body>
+</html>
