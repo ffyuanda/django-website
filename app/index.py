@@ -2,11 +2,8 @@ from flask import Flask
 from flask import request
 from flask import url_for
 from flask import render_template
-import data
 
 app = Flask(__name__)
-
-contact = data.Contact()
 
 @app.route("/")
 def blog():
